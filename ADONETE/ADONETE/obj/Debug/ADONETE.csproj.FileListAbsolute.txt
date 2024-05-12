@@ -1,0 +1,10 @@
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\bin\Debug\ADONETE.exe.config
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\bin\Debug\ADONETE.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\bin\Debug\ADONETE.pdb
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\obj\Debug\ADONETE.csproj.AssemblyReference.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\obj\Debug\ADONETE.csproj.CoreCompileInputs.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\obj\Debug\ADONETE.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\obj\Debug\ADONETE.pdb
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\bin\Debug\System.Data.SqlClient.dll
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\bin\Debug\System.Data.SqlClient.xml
+C:\Users\sumon\Desktop\Project\ProjectDemo\ADONETE\ADONETE\obj\Debug\ADONETE.csproj.Up2Date
