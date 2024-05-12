@@ -31,7 +31,7 @@ namespace FirstDemo
 
             // var command = new SqlCommand(sql, _sqlConnection);
 
-            /* #region
+             #region
                if (_sqlConnection.State != System.Data.ConnectionState.Open)
                {
                    _sqlConnection.Open();
@@ -44,7 +44,7 @@ namespace FirstDemo
              #endregion */
             //this is another way to write data in sql server database 
 
-            var result = Read2("Person");
+           var result = Read2("Person");
 
             // output procedure  data from the sql server database 
             foreach (var row in result)
@@ -54,6 +54,21 @@ namespace FirstDemo
                     Console.WriteLine($"{col.Key}={col.Value}");
                 }
                 Console.WriteLine(new string('=',8));
+            }
+           
+
+            var dataset = Readtable("Person");
+
+            for(var i=0;i<dataset.Tables.Count;i++)
+            {
+                for(int j = 0; j < dataset.Tables[i].Rows.Count;j++)
+                {
+                    for(int k = 0; k < dataset.Tables[i].Columns.Count;k++)
+                    {
+                        Console.WriteLine($"{dataset.Tables[i].Rows[j][k]}={dataset.Tables[i].Columns[k]}");
+                        
+                    }
+                }
             }
 
         }
@@ -139,6 +154,53 @@ namespace FirstDemo
 
 
 
+        }
+
+        
+
+
+        public static DataSet Readtable(string tableName)
+        {
+            var dataset=new DataSet();
+
+            var query = "select * from " + tableName;
+
+            try
+            {
+                if (_sqlConnection.State != System.Data.ConnectionState.Open)
+                    _sqlConnection.Open();
+
+              /* var datatable = new DataTable("Person");
+
+                datatable.Columns.Add(new DataColumn("Name"));
+                datatable.Columns.Add(new DataColumn("Age"));
+                datatable.Columns.Add(new DataColumn("Address"));
+
+               // var datarow = datatable.NewRow();
+
+               // datatable.Rows.Add(datarow);
+
+                dataset.Tables.Add(datatable); */
+
+                var adaptor = new SqlDataAdapter(query, _sqlConnection);
+                adaptor.Fill(dataset);
+
+
+            }
+            catch(SqlException se)
+            {
+                Console.WriteLine(se.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("exception error found" + ex.Message);
+
+            }
+            finally
+            {
+                _sqlConnection?.Close();
+            }
+            return dataset;
         }
 
     }
