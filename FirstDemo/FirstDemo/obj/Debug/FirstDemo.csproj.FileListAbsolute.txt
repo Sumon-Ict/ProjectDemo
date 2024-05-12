@@ -8,3 +8,13 @@ C:\Users\sumon\source\repos\FirstDemo\FirstDemo\obj\Debug\FirstDemo.pdb
 C:\Users\sumon\source\repos\FirstDemo\FirstDemo\bin\Debug\System.Data.SqlClient.dll
 C:\Users\sumon\source\repos\FirstDemo\FirstDemo\bin\Debug\System.Data.SqlClient.xml
 C:\Users\sumon\source\repos\FirstDemo\FirstDemo\obj\Debug\FirstDemo.csproj.Up2Date
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\bin\Debug\FirstDemo.exe.config
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\bin\Debug\FirstDemo.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\bin\Debug\FirstDemo.pdb
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\bin\Debug\System.Data.SqlClient.xml
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\obj\Debug\FirstDemo.csproj.AssemblyReference.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\obj\Debug\FirstDemo.csproj.CoreCompileInputs.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\obj\Debug\FirstDemo.csproj.Up2Date
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\obj\Debug\FirstDemo.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\FirstDemo\FirstDemo\obj\Debug\FirstDemo.pdb

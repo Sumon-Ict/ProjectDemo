@@ -19,28 +19,46 @@ namespace FirstDemo
            
 
 
-             var insertsql="insert into  Person  (Name,Age, Address) values('mamun', 78, 'bohgura')";
-            // var updatesql = "update Person set name='kobita' Age=23 where id =2";
+             var insertsql="insert into  Person  (Name,Age, Address) values('sakib', 78, 'bohgura')";
+             var updatesql = "update Person set name='kobita', Age=23 where id =2";
+
+            var deletesql = "delete from person where ID=2";
 
              Write(insertsql);
-            // Write(updatesql);
+             Write(updatesql);
+            Write(deletesql);
+
+
             // var command = new SqlCommand(sql, _sqlConnection);
-           
-           /* #region
-              if (_sqlConnection.State != System.Data.ConnectionState.Open)
-              {
-                  _sqlConnection.Open();
+
+            /* #region
+               if (_sqlConnection.State != System.Data.ConnectionState.Open)
+               {
+                   _sqlConnection.Open();
 
 
-              }
-              var command=new SqlCommand(insertsql, _sqlConnection);
-              command.ExecuteNonQuery(); 
-           
-            #endregion */
-           //this is another way to write data in sql server database 
+               }
+               var command=new SqlCommand(insertsql, _sqlConnection);
+               command.ExecuteNonQuery(); 
+
+             #endregion */
+            //this is another way to write data in sql server database 
+
+            var result = Read2("Person");
+
+            // output procedure  data from the sql server database 
+            foreach (var row in result)
+            {
+                foreach(var col in row)
+                {
+                    Console.WriteLine($"{col.Key}={col.Value}");
+                }
+                Console.WriteLine(new string('=',8));
+            }
 
         }
 
+       // write operation into sql server database 
           public static void Write(string sql)
           {
 
@@ -78,7 +96,50 @@ namespace FirstDemo
 
 
 
-  } 
+  }
+
+           // public static     retuntype                methodname(parameter)  
+           //read operation from sql server database 
+        public static IList<Dictionary<string, object>>Read2(string tableName) 
+        {
+            var result=new List<Dictionary<string, object>>();
+
+            var query = "select * from  " + tableName;
+
+            try
+            {
+
+                if (_sqlConnection.State != System.Data.ConnectionState.Open)
+                {  _sqlConnection.Open(); }
+
+                 var command = new SqlCommand(query, _sqlConnection);
+
+                var reader= command.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    var row = new Dictionary<string, object>();
+
+                    for(int i=0;i<reader.FieldCount;i++)
+                    {
+                        row.Add(reader.GetName(i), reader.GetValue(i));
+
+                    }
+                    result.Add(row);
+                }
+
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("exception error found"+ex.Message);
+            }
+
+            return result;
+
+
+
+        }
 
     }
     }
