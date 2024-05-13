@@ -1,0 +1,7 @@
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\bin\Debug\SolidPrinciple.exe.config
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\bin\Debug\SolidPrinciple.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\bin\Debug\SolidPrinciple.pdb
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\obj\Debug\SolidPrinciple.csproj.AssemblyReference.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\obj\Debug\SolidPrinciple.csproj.CoreCompileInputs.cache
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\obj\Debug\SolidPrinciple.exe
+C:\Users\sumon\Desktop\Project\ProjectDemo\SolidPrinciple\SolidPrinciple\obj\Debug\SolidPrinciple.pdb
