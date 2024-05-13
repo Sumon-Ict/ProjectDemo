@@ -11,9 +11,11 @@ namespace SealedClassExample
     {
         public string booktitle {  get; set; }
 
-        public void printf()
+        public void printf2(Science science)
         { 
-            Console.WriteLine(booktitle);
+           
+            Console.WriteLine(science.booktitle);
+            
         }
 
         

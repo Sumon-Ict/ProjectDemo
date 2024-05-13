@@ -24,7 +24,13 @@ namespace SealedClassExample
             var scienceB=new Science();
             scienceB.Id= 1;
             scienceB.Name = "English";
-            scienceB.
+            scienceB.booktitle = "Science";
+            scienceB.cost = 400;
+            scienceB.Description = "ramantic";
+            scienceB.Printf();
+            scienceB.printf2(scienceB);
+            var res= scienceB.Discount(scienceB);
+            Console.WriteLine(res); 
 
         }
     }
