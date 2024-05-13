@@ -10,6 +10,7 @@ namespace StructExample
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
